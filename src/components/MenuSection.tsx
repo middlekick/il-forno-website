@@ -30,7 +30,7 @@ const MenuSection = () => {
   ];
 
   return (
-    <section id="menu" className="py-20 bg-gradient-to-br from-italian-cream via-white to-italian-cream">
+    <section id="menu" className="py-20 bg-gradient-to-b from-slate-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-italian-red mb-6">
@@ -43,7 +43,7 @@ const MenuSection = () => {
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {/* Pizzas */}
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-italian-red/10">
+          <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-6">
               <Pizza className="text-italian-red mr-4" size={40} />
               <h3 className="text-2xl font-playfair font-bold text-italian-red">Pizzas</h3>
@@ -64,7 +64,7 @@ const MenuSection = () => {
           </div>
 
           {/* Burgers */}
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-italian-red/10">
+          <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-6">
               <Beef className="text-italian-red mr-4" size={40} />
               <h3 className="text-2xl font-playfair font-bold text-italian-red">Burgers & Menus</h3>
@@ -85,7 +85,7 @@ const MenuSection = () => {
           </div>
 
           {/* Boissons */}
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-italian-red/10">
+          <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300">
             <div className="flex items-center mb-6">
               <Coffee className="text-italian-red mr-4" size={40} />
               <h3 className="text-2xl font-playfair font-bold text-italian-red">Boissons</h3>
