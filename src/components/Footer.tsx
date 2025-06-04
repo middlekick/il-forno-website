@@ -13,13 +13,13 @@ const Footer = () => {
               <div className="flex items-center">
                 <MapPin className="mr-3" size={20} />
                 <div>
-                  <p>123 Rue de la Pizza</p>
-                  <p>75001 Paris</p>
+                  <p>5 Rue du Docteur Amodru</p>
+                  <p>91590 La Ferté Alais</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-3" size={20} />
-                <p>01 23 45 67 89</p>
+                <p>+33 1 69 64 81 50</p>
               </div>
               <div className="flex items-center">
                 <Clock className="mr-3" size={20} />
@@ -58,7 +58,7 @@ const Footer = () => {
             <p className="font-playfair text-lg">Il Forno - Pizzeria Italienne</p>
           </div>
           <p className="font-inter text-white/80">
-            © 2024 Il Forno. Tous droits réservés. | Fait avec passion pour la cuisine italienne
+            © {new Date().getFullYear()} Il Forno. Tous droits réservés. | Fait avec passion pour la cuisine italienne
           </p>
         </div>
       </div>

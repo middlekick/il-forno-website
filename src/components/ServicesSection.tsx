@@ -70,22 +70,22 @@ const ServicesSection = () => {
 
         {/* Moyens de paiement */}
         <div className="mt-16 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-slate-800 to-slate-700 p-8 rounded-xl text-white shadow-xl">
+          <div className="bg-gradient-to-r from-italian-green to-green-400 p-8 rounded-xl text-white shadow-xl">
             <div className="flex items-center justify-center mb-6">
               <CreditCard className="mr-4" size={40} />
               <h3 className="text-2xl font-playfair font-bold">Moyens de Paiement Acceptés</h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center font-inter">
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-colors">
+              <div className="bg-red-100/10 backdrop-blur-sm p-4 rounded-lg hover:bg-red-100/20 transition-colors">
                 <p className="font-semibold">Espèces</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-colors">
+              <div className="bg-red-100/10 backdrop-blur-sm p-4 rounded-lg hover:bg-red-100/20 transition-colors">
                 <p className="font-semibold">CB sans contact</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-colors">
+              <div className="bg-red-100/10 backdrop-blur-sm p-4 rounded-lg hover:bg-red-100/20 transition-colors">
                 <p className="font-semibold">Visa / Mastercard</p>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-white/20 transition-colors">
+              <div className="bg-red-100/10 backdrop-blur-sm p-4 rounded-lg hover:bg-red-100/20 transition-colors">
                 <p className="font-semibold">Chèques Vacances</p>
               </div>
             </div>

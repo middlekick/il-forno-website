@@ -1,4 +1,3 @@
-
 import { Clock, Calendar, Phone } from 'lucide-react';
 
 const HorairesSection = () => {
@@ -55,7 +54,7 @@ const HorairesSection = () => {
 
             {/* Informations supplémentaires */}
             <div className="space-y-6">
-              <div className="bg-gradient-to-br from-italian-red to-italian-green p-8 rounded-xl text-white">
+              <div className="bg-gradient-to-br from-italian-green to-green-400 p-8 rounded-xl text-white">
                 <div className="flex items-center mb-4">
                   <Calendar className="mr-4" size={32} />
                   <h3 className="text-xl font-playfair font-bold">Informations Pratiques</h3>
@@ -88,7 +87,7 @@ const HorairesSection = () => {
                 <p className="text-gray-600 font-inter mb-4">
                   Pour éviter l'attente, n'hésitez pas à nous appeler pour réserver votre table ou commander à emporter.
                 </p>
-                <button className="bg-italian-green text-white px-6 py-3 rounded-lg font-inter hover:bg-italian-green/90 transition-colors">
+                <button className="bg-italian-green text-white px-6 py-3 rounded-lg font-inter hover:bg-italian-green/90 transition-colors" onClick={() => window.location.href = 'tel:+33169648150'}>
                   Nous appeler
                 </button>
               </div>
