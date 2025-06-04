@@ -1,7 +1,10 @@
-
-import { MapPin, Phone, Clock, Heart } from 'lucide-react';
+import { MapPin, Phone, Clock, Heart, Send } from 'lucide-react';
+import { useState } from 'react';
+import Modal from './modal/Modal';
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <footer id="contact" className="bg-gradient-to-r from-slate-800 to-slate-900 text-white">
       <div className="container mx-auto px-4 py-16">
@@ -36,6 +39,9 @@ const Footer = () => {
               préparées avec passion et des ingrédients de qualité. Une expérience 
               culinaire italienne au cœur de la ville.
             </p>
+            <button onClick={() => setIsOpen(true)} className="mt-4 bg-green-700 hover:bg-green-500 text-white font-bold py-2 px-4 rounded flex"><Send className="mr-4"></Send>
+            Nous contacter
+          </button>
           </div>
 
           {/* Services */}
@@ -62,6 +68,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      {isOpen && <Modal onClose={() => setIsOpen(false)} />}
     </footer>
   );
 };
