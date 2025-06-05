@@ -1,8 +1,17 @@
 import { ChefHat, Clock, MapPin } from 'lucide-react';
 import backgroundIlForno from "../assets/images/IL-FORNO-background.jpg";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // durée de l'animation en ms
+      once: true,    // l'animation ne se joue qu'une fois
+    });
+  }, []);
+
   return (
     <section id="accueil" className="min-h-screen relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Background image overlay */}
@@ -16,7 +25,7 @@ const HeroSection = () => {
       {/* Content overlay */}
       <div className="relative z-10 flex items-center min-h-screen">
         <div className="container mx-auto px-4 py-20">
-          <div className="text-center animate-fade-in">
+          <div className="text-center animate-fade-in" data-aos="fade-up">
             <div className="flex justify-center mb-6">
               <ChefHat size={80} className="text-italian-red drop-shadow-lg" />
             </div>

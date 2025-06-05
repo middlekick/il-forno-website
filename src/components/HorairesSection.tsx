@@ -26,7 +26,7 @@ const HorairesSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Horaires */}
-            <div className="bg-gradient-to-br from-italian-cream to-white p-8 rounded-xl shadow-lg border border-italian-red/10">
+            <div className="bg-gradient-to-br from-italian-cream to-white p-8 rounded-xl shadow-lg border border-italian-red/10" data-aos="fade-right">
               <div className="flex items-center mb-6">
                 <Clock className="text-italian-red mr-4" size={40} />
                 <h3 className="text-2xl font-playfair font-bold text-italian-red">Planning Hebdomadaire</h3>
@@ -53,7 +53,7 @@ const HorairesSection = () => {
             </div>
 
             {/* Informations supplémentaires */}
-            <div className="space-y-6">
+            <div className="space-y-6" data-aos="fade-left">
               <div className="bg-gradient-to-br from-italian-green to-green-400 p-8 rounded-xl text-white">
                 <div className="flex items-center mb-4">
                   <Calendar className="mr-4" size={32} />

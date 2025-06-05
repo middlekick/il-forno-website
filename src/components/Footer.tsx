@@ -10,7 +10,7 @@ const Footer = () => {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
   return (
-    <footer id="contact" className="bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+    <footer id="contact" className="bg-gradient-to-r from-slate-800 to-slate-900 text-white" data-aos="fade-up">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Contact */}

@@ -1,4 +1,3 @@
-
 import { Utensils, Package, CreditCard, Clock } from 'lucide-react';
 
 const ServicesSection = () => {
@@ -16,7 +15,7 @@ const ServicesSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Sur Place */}
-          <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-right">
             <div className="flex items-center mb-6">
               <Utensils className="text-italian-red mr-4" size={40} />
               <h3 className="text-2xl font-playfair font-bold text-italian-red">Sur Place</h3>
@@ -42,7 +41,7 @@ const ServicesSection = () => {
           </div>
 
           {/* À Emporter */}
-          <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1" data-aos="fade-left">
             <div className="flex items-center mb-6">
               <Package className="text-italian-red mr-4" size={40} />
               <h3 className="text-2xl font-playfair font-bold text-italian-red">À Emporter</h3>
@@ -69,7 +68,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Moyens de paiement */}
-        <div className="mt-16 max-w-4xl mx-auto">
+        <div className="mt-16 max-w-4xl mx-auto" data-aos="zoom-in">
           <div className="bg-gradient-to-r from-italian-green to-green-400 p-8 rounded-xl text-white shadow-xl">
             <div className="flex items-center justify-center mb-6">
               <CreditCard className="mr-4" size={40} />

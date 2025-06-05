@@ -170,7 +170,7 @@ const MenuSection = () => {
 
   return (
     <section id="menu" className="py-20 bg-gradient-to-b from-slate-50 to-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" data-aos="fade-up">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-red-600 mb-6">
             Notre Menu
@@ -182,7 +182,7 @@ const MenuSection = () => {
 
         {/* Pizzas Section - Plus importante, prend toute la largeur */}
         <div className="mb-12">
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+          <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100" data-aos="zoom-in">
             <div className="flex items-center mb-8">
               <Pizza className="text-red-600 mr-4" size={40} />
               <div>

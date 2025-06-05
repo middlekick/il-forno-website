@@ -1,4 +1,3 @@
-
 const GallerySection = () => {
   const images = [
     {
@@ -21,7 +20,7 @@ const GallerySection = () => {
 
   return (
     <section id="galerie" className="py-20 bg-gradient-to-b from-slate-50 to-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4" data-aos="fade-up">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-italian-red mb-6">
             Découvrez Il Forno
@@ -36,6 +35,7 @@ const GallerySection = () => {
             <div 
               key={index}
               className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+              data-aos="zoom-in"
             >
               <img 
                 src={image.url}
