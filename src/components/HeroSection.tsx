@@ -1,14 +1,15 @@
-
 import { ChefHat, Clock, MapPin } from 'lucide-react';
+import backgroundIlForno from "../assets/images/IL-FORNO-background.jpg";
+
 
 const HeroSection = () => {
   return (
     <section id="accueil" className="min-h-screen relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Background image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        className="absolute inset-0 bg-cover bg-end bg-no-repeat opacity-30"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80')`
+          backgroundImage: `url(${backgroundIlForno})`
         }}
       />
       

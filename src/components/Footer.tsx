@@ -1,9 +1,13 @@
-import { MapPin, Phone, Clock, Heart, Send } from 'lucide-react';
+import { MapPin, Phone, Clock, Heart } from 'lucide-react';
 import { useState } from 'react';
-import Modal from './modal/Modal';
+import Modal from './modals/Modal';
+import LegalModal from './modal/LegalModal';
+import PrivacyModal from './modal/PrivacyModal';
 
 const Footer = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLegalOpen, setIsLegalOpen] = useState(false);
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
   return (
     <footer id="contact" className="bg-gradient-to-r from-slate-800 to-slate-900 text-white">
@@ -28,6 +32,14 @@ const Footer = () => {
                 <Clock className="mr-3" size={20} />
                 <p>Mar-Dim: 18h-22h</p>
               </div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=5+Rue+du+Docteur+Amodru,+91590+La+Ferté+Alais"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block bg-green-700 hover:bg-green-500 text-white font-bold py-2 px-4 rounded"
+              >
+                Voir sur Google Maps
+              </a>
             </div>
           </div>
 
@@ -39,7 +51,7 @@ const Footer = () => {
               préparées avec passion et des ingrédients de qualité. Une expérience 
               culinaire italienne au cœur de la ville.
             </p>
-            <button onClick={() => setIsOpen(true)} className="mt-4 bg-green-700 hover:bg-green-500 text-white font-bold py-2 px-4 rounded flex"><Send className="mr-4"></Send>
+            <button onClick={() => setIsOpen(true)} className="mt-4 bg-green-700 hover:bg-green-500 text-white font-bold py-2 px-4 rounded flex">
             Nous contacter
           </button>
           </div>
@@ -66,9 +78,16 @@ const Footer = () => {
           <p className="font-inter text-white/80">
             © {new Date().getFullYear()} Il Forno. Tous droits réservés. | Fait avec passion pour la cuisine italienne
           </p>
+          <div className="mt-2 flex justify-center space-x-4 text-sm">
+            <button onClick={() => setIsLegalOpen(true)} className="underline hover:text-italian-red transition-colors bg-transparent border-0 p-0 m-0 cursor-pointer">Mentions légales</button>
+            <span>|</span>
+            <button onClick={() => setIsPrivacyOpen(true)} className="underline hover:text-italian-red transition-colors bg-transparent border-0 p-0 m-0 cursor-pointer">Protection des données</button>
+          </div>
         </div>
       </div>
       {isOpen && <Modal onClose={() => setIsOpen(false)} />}
+      {isLegalOpen && <LegalModal onClose={() => setIsLegalOpen(false)} />}
+      {isPrivacyOpen && <PrivacyModal onClose={() => setIsPrivacyOpen(false)} />}
     </footer>
   );
 };

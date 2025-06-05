@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logoIlForno from "../assets/images/IL-FORNO-logo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
+            <img src={logoIlForno} alt="Logo Il Forno" className="h-10 w-auto" />
             <h1 className="text-2xl font-playfair font-bold text-italian-red">
               Il Forno
             </h1>
